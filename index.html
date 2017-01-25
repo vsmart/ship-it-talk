@@ -24,86 +24,121 @@
 class: center, middle
 
 # Ship it!
-## Building an elixir web app from first commit to live
+## Building an elixir web app from first commit to Live
 
 A software tale by Franka @franschm
 
 ---
 
-# goals
+### This is what it looks like
 
-\#1 A very opiniated manual on how to build a web app
-
----
-
-# goals
-
-\#1 A very opiniated manual on how to build a web app
-
-\#2 stressing self-reliance: I can do this!*
-
-... or find the resources from someone who does.
+![screenshot of delete-your-tweets](images/delete-your-tweets.png)
 
 ---
 
-# goals
+## Part 1 : Ship it! - The Why
+## Part 2 : How I built 'delete-your-tweets' - The What & How
+## Part 3 : Take-aways
 
-\#1 A very opiniated manual on how to build a web app
-
-\#2 stressing self-reliance: I can do this!*
-
-... or find the resources from someone who does.
-
-\#3 the importance of shipping a thing
 
 ---
 
-# what is shipping?
+## Part 1 :
+### Ship it! - The Why
+
+---
+
+# Wait, what is shipping?
 
  [ insert awkward lesbian couple joke ]
 
 ---
-# what is shipping?
+# Wait, what is shipping?
 
-to ship [in software development]:
+- to ship [in software development]:
 
-    to publish or distribute software
-
----
-# picking a "thing"
-
-* you will get many of the same benefits if you build
-
- * a game
- * a cooking blog
- * literally anything you can think of
+  means "to publish or distribute software"
 
 ---
 
-# goal 1: A very opiniated manual on how to build a web app
-
-Or how I build delete-your-tweets
+## Taking on ownership of a full project (product, design, dev, ops, marketing, ...) can force you to fill in those "grey areas" and force yourself to overcome fear of new things.
 
 ---
 
-# pick an idea
+## Self-reliance: I can do this!*
 
-* i like tweeting
-* i like privacy
-* i could use a thing that deletes tweets
+... or find the resources from someone who does.
+
+## Satisfaction of shipping a thing
+
+---
+
+# Picking a "thing"
+
+It doesn't have to be a web app. You could build:
+
+ * a mobile game
+ * a vegan recipe blog
+ * an online resistance reading club
+ * ... a small, completable thing
+
+---
+
+## "I want to learn all the things!"
+
+vs
+
+## "I want to become really great at this one thing!"
+
+---
+
+## The (problematic) myth of
+# The "full-stack" wizard
+
+![stack of pancakes](images/pancakes.jpg)
+
+---
+
+## The (problematic) myth of
+# The lonely software wolf
+
+---
+
+### In summary:
+
+* ?
+
+---
+
+### Part 2
+## How I built 'delete-your-tweets' - What & How
+
+### An experience report
+
+---
+
+![screenshot of delete-your-tweets](images/delete-your-tweets.png)
+
+---
+
+# [ ] pick an idea
+
+* I like tweeting
+* I like privacy
+* I could use a thing that deletes tweets
 
 idea: build an app that can delete tweets!
 
 ---
 
-# picking a tech stack
+# [ ] picking a tech stack
 
 * do you want to learn a new (to you) technology?
 * do you just want to build a thing?
 
 ---
 
-# Elixir Lang
+# elixir lang
 
 * elixir is a functional language that runs on beam, the Erlang VM
 * syntax is very similar to Ruby
@@ -129,6 +164,35 @@ end
 
 ---
 
+# a phoenix app
+
+* controllers, routing, templates, views
+
+(... and channels, sockets, etc...)
+
+---
+
+# [ ] prototype
+
+---
+
+# github, travis, tests ???
+
+---
+
+# deploying to heroku
+
+* heroku is a platform that let's you easily deploy web applications
+* has pre-made templates and configurations
+
+---
+
+# a note on tests
+
+* i don't have any. that's ok (sometimes)
+
+---
+
 # drawing a design
 
 * i downloaded sketch
@@ -150,13 +214,6 @@ end
 
 ---
 
-# deploying to heroku
-
-* heroku is a platform that let's you easily deploy web applications
-* has pre-made templates and configurations
-
----
-
 # continuous deployment with Travis CI
 
 * travis CI for building the code and running tests
@@ -167,12 +224,13 @@ end
 
 # domain setup
 
+* very big pain !!!
 * in preparation for this i registered my first domain
 * learning about dns
 
 ---
 
-# getting some users & feedback
+# getting some users
 
 * a week ago i tweeted
 * got some feedback
@@ -180,6 +238,8 @@ end
 ---
 
 # what's actually important?
+
+* you can delete tweets
 
 * you are smart and you can learn things!
 * shipping an app will make you feel confident & productive
@@ -191,15 +251,13 @@ class: center, middle
 
 # thank you! <3
 
-delete-your-tweets.franka.tech
+https://delete-your-tweets.franka.tech
 
-PS: I'm looking for a job. ;-P
-Talk to me hello@franka.tech
+Email me at hello@franka.tech!
 
 
     </textarea>
-    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
-    </script>
+    <script src="js/remark-latest.min.js"></script>
     <script>
       var slideshow = remark.create();
     </script>
