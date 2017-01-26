@@ -100,7 +100,10 @@ vs
 ---
 
 ## The (problematic) myth of
+
 # The lonely software wolf
+
+![wolf drawing](images/wolf.jpeg)
 
 ---
 
@@ -121,7 +124,7 @@ vs
 
 ---
 
-# [ ] pick an idea
+# [ ] Why deleting tweets?
 
 * I like tweeting
 * I like privacy
@@ -131,118 +134,164 @@ idea: build an app that can delete tweets!
 
 ---
 
-# [ ] picking a tech stack
+# [ ] Picking a tech stack
 
 * do you want to learn a new (to you) technology?
 * do you just want to build a thing?
 
 ---
 
-# elixir lang
+# Elixir Lang
 
-* elixir is a functional language that runs on beam, the Erlang VM
-* syntax is very similar to Ruby
-* "...leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems"
+* functional language that runs on the Erlang VM
+* Erlang known for high concurrency & performance
+* Ruby-style syntax
 
-[ insert elixir logo ]
+![Elixir Lang logo](images/elixir.png)
+
+---
 
 ```
 def hello_world do
   IO.puts "Hello World!"
 end
-```
 
+```
 ---
 
-# phoenix webframework
+```
+def handle_tweets do
+   fetch_tweets
+   |> filter_for_date
+   |> delete_tweets
+end
 
-* a framework to write MVC web applications in elixir
+```
+---
+
+# Phoenix Webframework
+
+* a framework to write web applications in elixir
 * heavily inspired by Rails
 * phoenixframework.org
 
-[ insert phoenix logo ]
+![Phoenix Framework Logo](images/phoenix.png)
 
 ---
 
-# a phoenix app
+### How to twitter?
 
-* controllers, routing, templates, views
-
-(... and channels, sockets, etc...)
+* something something oauth2 ?
 
 ---
 
-# [ ] prototype
+# "I am __________ on Twitter."
 
 ---
 
-# github, travis, tests ???
+# Drawing a design
 
----
-
-# deploying to heroku
-
-* heroku is a platform that let's you easily deploy web applications
-* has pre-made templates and configurations
-
----
-
-# a note on tests
-
-* i don't have any. that's ok (sometimes)
-
----
-
-# drawing a design
-
-* i downloaded sketch
+* I downloaded sketch
 * drew up something that i thought looked pretty cool
 
 ---
 
-# implementing the design
+# Implementing the design
 
-* i know some basic html and css
-* mostly fiddling around and googling things
+* I know some basic html and css
+* Mostly fiddling around and googling things
+* and a lot of help from my friends
+
+---
+## Now let's deploy it!
+
+* Heroku is a platform that let's you easily deploy web applications
+* has pre-made templates and configurations
 
 ---
 
-# interlude: a note on motivation
+## Deployment and Continuous Delivery
 
-* i registered this talk to help me finish the app
-* what motivates you to get stuff done?
-
+* continous integration with travis
+* continous deployment with travis?
 ---
-
-# continuous deployment with Travis CI
-
 * travis CI for building the code and running tests
 * but one can also set it up to DEPLOY code
 * can be a bit fiddly, but very nice once it's done
 
 ---
 
-# domain setup
+![screenshot of travis yml](images/travis.png)
 
-* very big pain !!!
-* in preparation for this i registered my first domain
-* learning about dns
-
----
-
-# getting some users
-
-* a week ago i tweeted
-* got some feedback
+* configuring this is fiddly at best
+* there are good docs that help
 
 ---
 
-# what's actually important?
+## A note on tests
 
-* you can delete tweets
+* I don't really have any. Sometimes that's ok.
+
+* I do have a great twitter test account: @do_u_like_trees
+
+---
+# brief interlude: a note on motivation
+
+![github contribution graph](images/github.png)
+
+* what helps you to get stuff done?
+
+---
+
+# Domain setup
+
+* choose your domain [ ]
+* choose a provider [ ]
+* read up on zone files! [ ]
+
+---
+
+## my zone file
+
+![zone file](images/zone-file.png)
+
+pro tip: `dig google.com any` to look at other people's configuration!
+
+---
+
+## a caveat on zone file versions
+
+![zone file](images/versions.png)
+
+
+---
+
+
+Feature Requests
+
+* user feedback
+
+(reminder: ... http://delete-your-tweets.franka.tech)
+
+---
+
+### Feature Requests
+
+## SSL support
+
+---
+
+## Part 3
+# Take-aways
+### aka what's actually important?
+
+---
+
+* the app works, I consider it "shipped"!
 
 * you are smart and you can learn things!
-* shipping an app will make you feel confident & productive
+
+* shipping a thing will make you feel confident & productive
 * --done-- shipped is better than perfect!
 
 ---
@@ -251,7 +300,7 @@ class: center, middle
 
 # thank you! <3
 
-https://delete-your-tweets.franka.tech
+http://delete-your-tweets.franka.tech
 
 Email me at hello@franka.tech!
 
