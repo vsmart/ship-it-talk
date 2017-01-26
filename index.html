@@ -42,9 +42,9 @@ A software tale by Franka @franschm
 ---
 # Wait, what is shipping?
 
-- to ship [in software development]:
+### to ship [in software development]:
 
-  means "to publish or distribute software"
+### ... means "to publish or distribute software"
 
 ---
 
@@ -87,18 +87,9 @@ vs
 ## The (problematic) myth of
 
 # The lonely software wolf
-
-![wolf drawing](images/wolf.jpeg)
-
----
-
-### In summary:
-
-* Shipping a small project can:
-
-** teach you new unexpected skills
-** be very satisfying
-** be fun!
+<br>
+<br>
+.center[![wolf drawing](images/wolf.jpeg)]
 
 ---
 
@@ -136,7 +127,7 @@ idea: build an app that can delete tweets!
 * Erlang known for high concurrency & performance
 * Ruby-style syntax
 
-![Elixir Lang logo](images/elixir.png)
+.right[![Elixir Lang logo](images/elixir.png)]
 
 ---
 
@@ -177,45 +168,57 @@ end
 
 ### extwitter: elixir client library for Twitter
 
+#### provides a handy abstraction over the Twitter REST api
+
+e.g.:
+
 ```
-bla bla
+ExTwitter.user_timeline
+
+
+ExTwitter.destroy_status
 
 ```
 ---
+class: middle
+# Drawing a design
+---
 
 # Drawing a design
+.center[![unstyled design](images/unstyled.png)]
 
-* I downloaded sketch
-* drew up something that i thought looked pretty cool
+---
+
+# Drawing a design
+.center[![styled design](images/styled.png)]
 
 ---
 
 # Implementing the design
-
-* I know some basic html and css
-* Mostly fiddling around and googling things
-* and a lot of help from my friends
-
+.center[![styled design](images/styled2.png)]
 ---
 
-.class: middle
+# Implementing the design
+.center[![styled design](images/delete-your-tweets.png)]
+---
+
+class: center
+class: middle
 # brief interlude: a note on side projects
 
 ---
 ## Now let's deploy it!
 
-* Heroku is a platform that let's you easily deploy web applications
-* has pre-made templates and configurations
+#### Heroku is a platform that let's you easily deploy web applications
+#### Has pre-made templates and configurations
 
 ---
 
-## Deployment and Continuous Delivery
+## Continuous Integration with Travis CI
 
-* continous integration with travis
-* next step: continous *deployment* with travis?
+### next step: continous *deployment* with travis?
 
 ---
-
 ![screenshot of travis yml](images/travis.png)
 
 * configuring this is fiddly at best
@@ -223,7 +226,9 @@ bla bla
 
 ---
 
-![screenshot of travis yml](images/travis-file.png)
+## Closer look at a travis yml
+
+.center[![screenshot of travis yml](images/travis-file.png)]
 
 ---
 
@@ -236,7 +241,7 @@ bla bla
 
 ---
 
-.class: middle
+class: center
 # brief interlude: a note on motivation
 
 .right[![github contribution graph](images/github.png)]
@@ -245,10 +250,8 @@ bla bla
 ### What helps you to get stuff done?
 
 ---
-
+class: middle
 # Domain setup
-
-* what do I mean by this?
 
 ---
 
@@ -307,6 +310,8 @@ Feature Requests
 
 * Let's Encrypt let's you generate certificates *for free*!
 
+.right[![lets encrypt logo](images/encrypt.png)]
+
 ---
 
 ## Part 3
@@ -315,19 +320,25 @@ Feature Requests
 
 ---
 
-# Is it shipped?
+## Is it shipped?
+
+# Demo time!
 
 ---
 
-* you are smart and you can learn things!
+class: middle
+### you are smart and you can learn things!
 
 ---
 
-* shipping a thing will make you feel confident & productive
+class: middle
+### shipping a thing will make you feel productive & expose you to new things!
 
 ---
 
-shipped is better than perfect!
+### shipped is better than perfect!
+
+.center[![ship it gif](images/shipit.gif)]
 
 ---
 
@@ -336,6 +347,8 @@ class: center, middle
 # thank you! <3
 
 http://delete-your-tweets.franka.tech
+
+Code is at https://github.com/vsmart/delete-your-tweets
 
 Email me at hello@franka.tech!
 PS: I'm looking for a job.
